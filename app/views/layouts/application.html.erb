@@ -9,6 +9,30 @@
   </head>
 
   <body>
+	  <% {alert: "danger", notice: "success"}.each do |key, value| %>
+	  	<% if flash[key].present? %>
+	  		<div class="container">
+	  			<div class="alert alert-<% value %> alert-dismissable" role="alert">
+	  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	  				<%= flash[key] %>
+	  			</div>
+	  		</div>
+	  	<% end %>
+	  <% end %>
+
+	  <div class="container">
+		  <div class="col-xs-10 col-xs-offset-1">
+		  	Yo
+		  </div>
+		</div>
+	  <% if current_user %>
+	  	You're signed in as <%= current_user.email %>
+	  	<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+	  <% else %>
+	  	<%= link_to "Sign In", new_user_session_path %>
+	  	<%= link_to "Sign Up", new_user_registration_path %>
+	  <% end %>
+
     <%= yield %>
   </body>
 </html>
