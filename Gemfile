@@ -5,8 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use FactoryGirl for test automation
+gem 'factory_girl_rails', '~> 4.0'
+
 # Use simpleform for form creation
 gem 'simple_form'
+
 # Use Devise for user authentication
 gem 'devise'
 
