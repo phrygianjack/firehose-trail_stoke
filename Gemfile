@@ -5,6 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Use Carrierwave-aws gem to do cloud storage
+gem 'carrierwave-aws'
+
+# User Figaro gem for protecting access keys
+gem 'figaro'
+
 # Use FactoryGirl for test automation
 gem 'factory_girl_rails', '~> 4.0'
 
