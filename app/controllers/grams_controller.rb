@@ -40,6 +40,17 @@ class GramsController < ApplicationController
 		end
 	end
 
+  def destroy
+    @gram = Gram.find_by_id(params[:id])
+    if !@gram.blank?
+    	@gram.destroy
+    else
+    	return render_not_found
+    end
+
+    redirect_to root_path
+  end
+
 private
 	def gram_params
 		params.require(:gram).permit(:message)
