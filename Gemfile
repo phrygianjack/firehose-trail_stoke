@@ -17,6 +17,8 @@ gem 'devise'
 # Use Twitter Bootstrap gem for layout and styling
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+# Use Carrierwave for image uploads
+gem 'carrierwave', '~> 1.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
