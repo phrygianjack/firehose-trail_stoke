@@ -1,24 +1,28 @@
-# README
+= README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Trail Stoke is an Instagram clone web application focused on delivering photos of trails and outdoor adventures. Users can sign up, upload a photo with comments, and comment on other image posts.
 
-Things you may want to cover:
+Visit the live application: https://trail-stoke.herokuapp.com/
 
-* Ruby version
+---
+== Implementation Details:
 
-* System dependencies
+* Build using Ruby on Rails (5.01)
 
-* Configuration
+* PostgreSQL database
 
-* Database creation
+* Twitter Bootstrap 3 for CSS and UI components
 
-* Database initialization
+* Simple Form gem for form implementation
 
-* How to run the test suite
+* Devise for user authentication
 
-* Services (job queues, cache servers, search engines, etc.)
+* CarrierWave for image uploading
 
-* Deployment instructions
+* AWS S3 for image storage
 
-* ...
+* TDD using RSpec & FactoryGirl
+
+* RuboCop for style enforcement
+
+* Responsive design

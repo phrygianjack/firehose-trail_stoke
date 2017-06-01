@@ -7,26 +7,18 @@ end
 
 # Use Carrierwave-aws gem to do cloud storage
 gem 'carrierwave-aws'
-
 # User Figaro gem for protecting access keys
 gem 'figaro'
-
 # Use FactoryGirl for test automation
 gem 'factory_girl_rails', '~> 4.0'
-
 # Use simpleform for form creation
 gem 'simple_form'
-
 # Use Devise for user authentication
 gem 'devise'
-
 # Use Twitter Bootstrap gem for layout and styling
 gem 'bootstrap', '~> 4.0.0.alpha6'
-
 # Use Carrierwave for image uploads
 gem 'carrierwave', '~> 1.0'
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
@@ -64,8 +56,8 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

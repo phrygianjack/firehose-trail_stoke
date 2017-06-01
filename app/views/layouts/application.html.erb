@@ -12,7 +12,7 @@
 
   <body>
   <div class="top-nav">
-  	<div class="offset-1 col-10 col-sm-8 offset-sm-2 col-md-6 offset-md-3">
+  	<%= nice_box_tag do %>
   		<div class="brand float-left">
   			Trail Stoke
   		</div>	
@@ -26,7 +26,7 @@
 			  	<%= link_to "Sign Up", new_user_registration_path %>
 			  <% end %>
   		</div>
-  	</div>
+  	<% end %>
   	<br class="clear-fix" />
   </div>
 
@@ -34,7 +34,7 @@
 	  <% {alert: "danger", notice: "success"}.each do |key, value| %>
 	  	<% if flash[key].present? %>
 	  		<div class="container">
-	  			<div class="alert alert-<% value %> alert-dismissable" role="alert">
+	  			<div class="alert alert-<%= value %> alert-dismissable" role="alert">
 	  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 	  				<%= flash[key] %>
 	  			</div>

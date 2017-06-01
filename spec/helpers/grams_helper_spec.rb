@@ -10,6 +10,6 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe GramsHelper, type: :helper do
-
-end
+# RSpec.describe GramsHelper, type: :helper do
+#   # Pending
+# end

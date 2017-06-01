@@ -1,0 +1,75 @@
+require: rubocop-rspec
+
+# inherit_from: .rubocop_todo.yml
+
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+  # Cop names are not displayed in offense messages by default. Change behavior
+  # by overriding DisplayCopNames, or by giving the `-D/--display-cop-names`
+  # option.
+  DisplayCopNames: true
+  # Style guide URLs are not displayed in offense messages by default. Change
+  # behavior by overriding `DisplayStyleGuide`, or by giving the
+  # `-S/--display-style-guide` option.
+  DisplayStyleGuide: true
+
+Metrics/AbcSize:
+  Enabled: False
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'config/initializers/simple_form_bootstrap.rb'
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'
+
+Metrics/LineLength:
+  Max: 130
+  Exclude:
+    - 'config/initializers/*'
+
+RSpec/MultipleExpectations:
+  Max: 3
+
+RSpec/ExampleLength:
+  Max: 50
+
+Style/BlockComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FirstParameterIndentation:
+  EnforcedStyle: consistent
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IndentationConsistency:
+  Enabled: false
+
+Style/IndentArray:
+  EnforcedStyle: consistent
+
+Style/IndentHash:
+  EnforcedStyle: consistent
+
+Style/StringLiterals:
+  Exclude:
+    - 'spec/spec_helper.rb'
+    - 'spec/rails_helper.rb'
+    - 'config/puma.rb'
+    - 'Gemfile'
+
